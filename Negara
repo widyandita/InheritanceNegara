@@ -1,0 +1,11 @@
+package inheritance.java;
+
+public class Negara {
+    public Negara() {
+        System.out.println("construct Negara");
+    }
+
+    public void benua() {
+        System.out.println("Negara dari Benua...");
+    }
+}
