@@ -1,0 +1,23 @@
+package inheritance.java;
+
+public class Main {
+    public static void main(String[] args) {
+        Negara negara = new Negara();
+        System.out.println("Apakah negara IS-A Objek? -> " + (negara instanceof Object));
+        System.out.println("Apakah negara IS-A Negara? -> " + (negara instanceof Negara));
+        System.out.println("Apakah negara IS-A Inggris? -> " + (negara instanceof Inggris));
+
+        System.out.println("----------------------------------------");
+
+        Inggris inggris = new Inggris();
+        System.out.println("Apakah negara IS-A Objek? -> " + (inggris instanceof Object));
+        System.out.println("Apakah inggris IS-A Negara? -> " + (inggris instanceof Negara));
+        System.out.println("Apakah inggris IS-A Inggris? -> " + (inggris instanceof Inggris));
+
+        System.out.println("----------------------------------------");
+
+        negara.benua();
+        inggris.benua();
+        inggris.benua("Eropa");
+    }
+}
