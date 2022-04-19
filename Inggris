@@ -1,0 +1,18 @@
+package inheritance.java;
+
+public class Inggris extends Negara {
+    public Inggris() {
+        super();
+        System.out.println("construct Inggris");
+    }
+
+    //overriding
+    public void benua() {
+        System.out.println("Inggris dari Benua...");
+    }
+
+    //overloading
+    public void benua(String continent) {
+        System.out.println("Inggris dari Benua " + continent);
+    }
+}
